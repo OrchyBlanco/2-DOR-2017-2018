@@ -1,0 +1,43 @@
+body{
+    font-family: sans-serif;
+}
+table{
+    margin: 1em;
+     border-collapse: collapse;
+}
+td,th{
+   
+    border:solid 1px black;
+    
+    padding: 0.3em;
+}
+th{
+    text-align: center;
+    color:white;
+    background-color: #A4A4A4;
+}
+td, span{
+    text-align: left;
+}
+td.precioE{
+    text-align: right;
+}
+.cantidad{
+    text-align: center;
+}
+#total td{
+    font-weight: bold;
+    border-bottom: none;
+    border-left: none;
+    text-align: right;
+}
+#total td.precioE{
+    text-align: center;
+    border:solid 1px black;
+    color:white;
+    background-color: #A4A4A4;
+}
+#total{
+    border-top: solid 5px black;
+   
+}
