@@ -1,0 +1,100 @@
+#basico #winning {
+  background-color: red;
+  border: 1px solid black;
+}
+#basico .better {
+  background-color: gray;
+  border: none !important;
+}
+
+#basico p {
+  background-color: blue;
+  color: white;
+  padding: 5px;
+}
+
+/*------------------------------------*/
+
+/* specificity: 0101 */
+#enlaces #outer a {
+  background-color: red;
+}
+
+/* specificity: 0201 */
+#enlaces #outer #inner a {
+  background-color: blue;
+}
+
+/* specificity: 0104 */
+#enlaces #outer div ul li a {
+  color: yellow;
+}
+
+/* specificity: 0113 */
+#enlaces #outer div ul .nav a {
+  color: white;
+}
+
+/* specificity: 0024 */
+#enlaces div div li:nth-child(2) a:hover {
+  border: 10px solid black;
+}
+
+/* specificity: 0023 */
+#enlaces div li:nth-child(2) a:hover {
+  border: 10px dashed black;
+}
+
+/* specificity: 0033 */
+#enlaces div div .nav:nth-child(2) a:hover {
+  border: 10px double black;
+}
+
+#enlaces a {
+  display: inline-block;
+  line-height: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#enlaces ul {
+  padding: 0;
+}
+
+#enlaces li {
+  list-style-type: none;
+}
+
+/*--------------------------*/
+
+/* specificity: 0002 */
+#frase p strong {
+  background-color: khaki;
+  color: green;
+}
+
+/* specificity: 0001 */
+#frase strong {
+  text-decoration: underline;
+  color: red;
+}
+
+/*------------------*/
+body {
+  color: green;
+}
+
+.inherit a {
+  color: inherit;
+}
+
+.initial a {
+  color: initial
+}
+
+.unset a {
+  color: unset;
+}
